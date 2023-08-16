@@ -14,9 +14,7 @@
           "edition": "Datacenter",
           "type": "pCore",
           "processors": 6,
-          "additionalVirtualMachines": 0,
-          "assignedLicenses": 8,
-          "immutableId": "<generated Guid>"
+          "additionalVirtualMachines": 0
         }
       }
     }

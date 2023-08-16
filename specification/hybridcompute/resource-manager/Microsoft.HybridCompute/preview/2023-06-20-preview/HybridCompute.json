@@ -276,7 +276,7 @@
         "tags": [
           "licenses"
         ],
-        "operationId": "licenses_List",
+        "operationId": "licenses_ListByResourceGroup",
         "description": "The operation to get all licenses of a non-Azure machine",
         "parameters": [
           {
@@ -308,7 +308,46 @@
         },
         "x-ms-examples": {
           "GET all Machine Extensions": {
-            "$ref": "./examples/license/License_List.json"
+            "$ref": "./examples/license/License_ListByResourceGroup.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.HybridCompute/licenses": {
+      "get": {
+        "tags": [
+          "licenses"
+        ],
+        "operationId": "licenses_ListBySubscription",
+        "description": "The operation to get all licenses of a non-Azure machine",
+        "parameters": [
+          {
+            "$ref": "../../../../../common-types/resource-management/v3/types.json#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v3/types.json#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/LicensesListResult"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "../../../../../common-types/resource-management/v3/types.json#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "GET all Machine Extensions": {
+            "$ref": "./examples/license/License_ListBySubscription.json"
           }
         }
       }
@@ -2541,10 +2580,6 @@
           "x-ms-client-flatten": true,
           "$ref": "#/definitions/LicenseProperties",
           "description": "Hybrid Compute License properties"
-        },
-        "provisioningState": {
-          "$ref": "#/definitions/ProvisioningState",
-          "description": "The provisioning state, which only appears in the response."
         }
       },
       "allOf": [
@@ -2557,6 +2592,10 @@
     "LicenseProperties": {
       "type": "object",
       "properties": {
+        "provisioningState": {
+          "$ref": "#/definitions/ProvisioningState",
+          "description": "The provisioning state, which only appears in the response."
+        },
         "licenseType": {
           "$ref": "#/definitions/LicenseType",
           "description": "The type of the license resource."
