@@ -33,7 +33,7 @@
       }
     }
   },
-  "paths": {    
+  "paths": {
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HybridCompute/licenses/{licenseName}": {
       "put": {
         "tags": [
@@ -2538,18 +2538,15 @@
       "type": "object",
       "properties": {
         "properties": {
-          "type": "object",
-          "properties": {
-            "x-ms-client-flatten": true,
-            "$ref": "#/definitions/LicenseProperties",
-            "description": "Hybrid Compute License properties"
-          },
-          "provisioningState": {
-            "$ref": "#/definitions/ProvisioningState",
-            "description": "The provisioning state, which only appears in the response."
-          },
-          "description": "Describe the properties of a license."
-        }
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/LicenseProperties",
+          "description": "Hybrid Compute License properties"
+        },
+        "provisioningState": {
+          "$ref": "#/definitions/ProvisioningState",
+          "description": "The provisioning state, which only appears in the response."
+        },
+        "description": "Describe the properties of a license."
       },
       "allOf": [
         {
@@ -2576,12 +2573,9 @@
       "type": "object",
       "properties": {
         "properties": {
-          "type": "object",
-          "properties": {
-            "x-ms-client-flatten": true,
-            "$ref": "#/definitions/LicenseUpdateProperties",
-            "description": "License Update properties"
-          }
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/LicenseUpdateProperties",
+          "description": "License Update properties"
         }
       },
       "allOf": [
