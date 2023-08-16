@@ -2545,15 +2545,14 @@
         "provisioningState": {
           "$ref": "#/definitions/ProvisioningState",
           "description": "The provisioning state, which only appears in the response."
-        },
-        "description": "Describe the properties of a license."
+        }
       },
       "allOf": [
         {
           "$ref": "../../../../../common-types/resource-management/v3/types.json#/definitions/TrackedResource"
         }
       ],
-      "description": "Describes a license profile in a hybrid machine."
+      "description": "Describes a license in a hybrid machine."
     },
     "LicenseProperties": {
       "type": "object",
@@ -2593,9 +2592,9 @@
           "description": "The type of the license resource."
         },
         "licenseDetails": {
+          "x-ms-client-flatten": true,
           "type": "object",
           "properties": {
-            "x-ms-client-flatten": true,
             "state": {
               "$ref": "#/definitions/LicenseState"
             },
