@@ -29,11 +29,11 @@
             "esuKeyState": "Inactive",
             "esuKeys": [
               {
-                "esuSku": "esuSkuNumber1",
+                "sku": "skuNumber1",
                 "licenseStatus": "licenseStatus1"
               },
               {
-                "esuSku": "esuSkuNumber2",
+                "sku": "skuNumber2",
                 "licenseStatus": "licenseStatus2"
               }
             ]

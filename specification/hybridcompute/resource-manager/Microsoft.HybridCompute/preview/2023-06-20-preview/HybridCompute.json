@@ -3776,18 +3776,11 @@
     "licenseNameParameter": {
       "name": "licenseName",
       "in": "path",
-      "description": "The name of the license.",
       "required": true,
       "type": "string",
       "pattern": "[a-zA-Z0-9-_\\.]+",
-      "enum": [
-        "default"
-      ],
-      "x-ms-parameter-location": "method",
-      "x-ms-enum": {
-        "name": "LicenseName",
-        "modelAsString": false
-      }
+      "description": "The name of the license.",
+      "x-ms-parameter-location": "method"
     }
   }
 }

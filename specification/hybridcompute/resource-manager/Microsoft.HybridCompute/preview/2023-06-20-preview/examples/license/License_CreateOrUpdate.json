@@ -11,9 +11,9 @@
         "licenseDetails": {
           "state": "Activated",
           "target": "Windows Server 2012",
-          "edition": "datacenter",
+          "edition": "Datacenter",
           "type": "pCore",
-          "Processors": 6,
+          "processors": 6,
           "additionalVirtualMachines": 0,
           "assignedLicenses": 8,
           "immutableId": "<generated Guid>"
@@ -34,11 +34,10 @@
           "licenseDetails": {
             "state": "Activated",
             "target": "Windows Server 2012",
-            "edition": "datacenter",
+            "edition": "Datacenter",
             "type": "pCore",
-            "Processors": 6,
+            "processors": 6,
             "additionalVirtualMachines": 0,
-            "assignedLicenses": 8,
             "immutableId": "<generated Guid>"
           }
         }
@@ -61,9 +60,9 @@
           "licenseDetails": {
             "state": "Activated",
             "target": "Windows Server 2012",
-            "edition": "datacenter",
+            "edition": "Datacenter",
             "type": "pCore",
-            "Processors": 6,
+            "processors": 6,
             "additionalVirtualMachines": 0,
             "assignedLicenses": 8,
             "immutableId": "<generated Guid>"
@@ -73,4 +72,3 @@
     }
   }
 }
-

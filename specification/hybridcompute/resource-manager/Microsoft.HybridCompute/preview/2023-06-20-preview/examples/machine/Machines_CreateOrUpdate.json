@@ -65,16 +65,14 @@
             }
           },
           "esuProperties": {
-            "arcEsuEnrollmentState": "NotEnrolled",
-            "esuKeyState": "Inactive",
-            "serverType": "Standard",
+            "assignedLicense": "<guid>",
             "esuKeys": [
               {
-                "esuSku": "skuNumber1",
+                "sku": "skuNumber1",
                 "licenseStatus": "licenseStatus1"
               },
               {
-                "esuSku": "skuNumber2",
+                "sku": "skuNumber2",
                 "licenseStatus": "licenseStatus2"
               }
             ]
